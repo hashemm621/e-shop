@@ -82,6 +82,70 @@ min-height: 550px;
         .testimonial .carousel-control-next{
             display: none;
         }
+        .offers {
+            padding: 4rem 1rem;
+        }
+    
+        /* Heading font-size adjustment */
+        .offers .offer-box .offer-info .heading-bigger {
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+    
+        /* Adjust offer title */
+        .offers .offer-box .offer-info .offer-title-1 {
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+    
+        /* Adjust button size */
+        .offers .offer-box .offer-info .btn-outline-danger {
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem;
+        }
+    
+        /* Image and offer box adjustments */
+        .offers .offer-box .offer-image img {
+            width: 100%;
+            height: auto; /* Ensures image doesn't stretch */
+            object-fit: cover;
+        }
+    
+        .offers .offer-box .offer-info {
+            justify-content: flex-start;
+        }
+    
+        .offers .offer-box {
+            margin-bottom: 2rem;
+        }
+    
+        /* Make each offer box full-width in mobile */
+        .offers .col-md-6 {
+            flex: 0 0 100%; /* Full-width in mobile */
+            max-width: 100%;
+        }
+    
+        /* Remove skew effect on mobile */
+        .offers .offer-box .offer-image::before {
+            display: none;
+        }
+}
+
+@media (max-width: 576px) {
+    /* Further adjustments for very small screens */
+    .offers .offer-box .offer-info .heading-bigger {
+        font-size: 1.5rem;
+    }
+
+    .offers .offer-box .offer-info .offer-title-1 {
+        font-size: 0.9rem;
+    }
+
+    /* Button size adjustments */
+    .offers .offer-box .offer-info .btn-outline-danger {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
 }
 
 @media (max-width:330px){
